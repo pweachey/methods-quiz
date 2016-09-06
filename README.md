@@ -4,34 +4,16 @@
 
 Fork the repository, then clone your fork
 
-Install ruby dependencies
-
-```
-    $ bundle install
-```
-
-Run the existing tests at least once to make sure there are no errors before writing any code.
-
-```
-    $ ruby methods_quiz_test.rb
-```
-
-Open the folder in a new sublime window
-
-```
-    $ subl .
-```
-
 ## Quiz
 
 Follow this process for your quiz:
 
-1. Write the tests for a method first!!
+1. Write the tests for a method first!
 2. Commit with message "Tests for method_name"
-3. Use the tests to write the method. Red -> Green -> Refactor.
-4. Commit with message "method_name complete"
+3. Use the tests to write the method.
+4. Commit with message "Implement method_name"
 5. Move on to the next method
-6. When all done, run the entire test suite verify everything still works
+6. When all done, run the entire test suite to verify everything still works
 7. Turn it in with:
     ```$ git push```
 
@@ -69,17 +51,3 @@ Follow this process for your quiz:
     - Ignore white space around the original input, so it should return "appleway" for both "apple" and "   apple  ".
     - Ignore case, so it should return "appleway" for both "Apple" and "aPpLe"
     - **Extra Credit** | If a user types in a curse word pig_latinify should censor the result by replacing any vowel in the original word with an asterisk
-
-## Testing
-
-Run the entire test suite
-
-```
-    $ ruby methods_quiz_test.rb
-```
-
-Run only a specific test
-
-```
-    $ ruby methods_quiz_test.rb --name test_method_name
-```
