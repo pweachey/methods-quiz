@@ -37,27 +37,45 @@ describe 'Methods' do
 
   end
 
-  describe 'not_string'
+    describe 'not_string'
 
-  it 'returns string with not unchanged' do
-    not_string(not right).must_equal(true)
+    it 'returns string with not unchanged' do
+      not_string(not right).must_equal(true)
+    end
+
+    it 'returns string with not unchanged' do
+      not_string(not chill).must_equal(true)
+    end
+
   end
 
-  it 'returns string with not unchanged' do
-    not_string(not chill).must_equal(true)
-  end
+    describe 'icy_hot'
 
-end
+    it 'It is icy if a temperature is less than zero'
+      icy_hot(0)must_equal(true)
+    end
 
-  describe 'icy_hot'
+    it 'It is hot if a temperature is greater than 100'
+      icy_hot(100)must_equal(true)
+    end
 
-  it 'It is icy if a temperature is less than zero'
-  icy_hot(0)must_equal(true)
-  end
-
-  it 'It is hot if a temperature is greater than 100'
-  icy_hot(100)must_equal(true)
   end
 
 
+    describe 'closer_to'
+
+    it 'returns the first guess if it is closer'
+      closer_to(5, 10, 15)must_equal(5)
+    end
+
+    it 'returns the second guess if it is closer'
+      closer_to(20, 30, 40)must_equal(30)
+    end
+
+    it 'returns the third guess if it is closer'
+      closer_to(5, 10, 15)must_equal(15)
+    end
+
+    describe 'two_as_one'
+    
 end
