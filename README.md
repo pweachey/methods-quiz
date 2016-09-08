@@ -34,7 +34,7 @@ Follow this process for your quiz:
 5. two_as_one?
 
     Given three integers, return true if it is possible to add two of the ints to get the third.
-6. pig_latinify
+6. pig_latinify **Extra Credit**
 
     Given a word, return its pig latin conversion. 
     
@@ -50,4 +50,4 @@ Follow this process for your quiz:
 
     - Ignore white space around the original input, so it should return "appleway" for both "apple" and "   apple  ".
     - Ignore case, so it should return "appleway" for both "Apple" and "aPpLe"
-    - **Extra Credit** | If a user types in a curse word pig_latinify should censor the result by replacing any vowel in the original word with an asterisk
+    - **Extra Extra Credit** | If a user types in a curse word pig_latinify should censor the result by replacing any vowel in the original word with an asterisk
