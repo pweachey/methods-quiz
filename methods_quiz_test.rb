@@ -74,8 +74,31 @@ describe 'Methods' do
 
     it 'returns the third guess if it is closer'
       closer_to(5, 10, 15)must_equal(15)
+      closer_to(5, 10, 15)must_equal(0)
     end
 
+    it 'returns the third guess if it is closer'
+      closer_to(25, 30, 35)must_equal(15)
+      closer_to(25, 30, 35)must_equal(0)
+    end
+
+  end
+
     describe 'two_as_one'
-    
+
+    it 'returns the answer of the two numbers'
+      two_as_one(1, 2, 3)must.equal(true)
+    end
+
+    it 'returns the answer of the two numbers'
+      two_as_one(10, 20, 30)must.equal(true)
+    end
+
+    it 'returns the answer of the two numbers'
+      two_as_one(100, 200, 300)must.equal(true)
+    end
+
+    it 'returns the answer of the two numbers'
+      two_as_one(11, 2, 311)must.equal(false)
+    end
 end

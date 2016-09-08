@@ -21,7 +21,8 @@ end
 
 # TODO - write closer_to
 def closer_to
-	return()
+
+	if a
 end
 
 
