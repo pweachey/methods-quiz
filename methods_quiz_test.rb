@@ -46,4 +46,18 @@ describe 'Methods' do
   it 'returns string with not unchanged' do
     not_string(not chill).must_equal(true)
   end
+
+end
+
+  describe 'icy_hot'
+
+  it 'It is icy if a temperature is less than zero'
+  icy_hot(0)must_equal(true)
+  end
+
+  it 'It is hot if a temperature is greater than 100'
+  icy_hot(100)must_equal(true)
+  end
+
+
 end
